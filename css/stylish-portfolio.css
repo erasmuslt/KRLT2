@@ -302,31 +302,49 @@ footer {
 /* jihoon added */
 
 
-.neon {
-    color: #fff;
-    -webkit-animation: neon 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon 1.5s ease-in-out infinite alternate;
-    animation: neon 1.5s ease-in-out infinite alternate;
+
+@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
+.hidden {
+    opacity:0;
 }
 
-@keyframes neon {
+.console-container {
+   
+    font-family:'Times New Roman', Times, serif;
+    font-size:4em;
+    text-align:center;
+    height:200px;
+    width:600px;
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.console-underscore {
+    display:inline-block;
+    position:relative;
+    top:-0.14em;
+    left:10px;
+}
+  
+
+.neon {
+    color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon1 {
     from {
-      text-shadow:
-      0 0 6px rgba(202,228,225,0.92),
-      0 0 30px rgba(202,228,225,0.34),
-      0 0 12px rgba(30,132,242,0.52),
-      0 0 21px rgba(30,132,242,0.92),
-      0 0 34px rgba(30,132,242,0.78),
-      0 0 54px rgba(30,132,242,0.92);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #478ac9, 0 0 70px #478ac9, 0 0 80px #478ac9, 0 0 100px #478ac9;
     }
     to {
-      text-shadow:
-      0 0 6px rgba(202,228,225,0.98),
-      0 0 30px rgba(202,228,225,0.42),
-      0 0 12px rgba(30,132,242,0.58),
-      0 0 22px rgba(30,132,242,0.84),
-      0 0 38px rgba(30,132,242,0.88),
-      0 0 60px rgba(30,132,242,1);
+        text-shadow: 0 0 5px #fff, 0 0 10px #478ac9,  0 0 20px #478ac9;
     }
-  }
-  
+}

@@ -42,9 +42,7 @@ $(document).ready(function() {
 
 
 const para1 = document.querySelector('hh1');
-//para1.addEventListener('play',consoleText(["JIHOON & ASTA."], "text", ["blue"]));
-
-para1.animate(consoleText(["JIHOON & ASTA."], "text", ["blue"]));
+para1.animate(consoleText(["JIHOON & ASTA."], "text", ["white"]));
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ["#fff"];

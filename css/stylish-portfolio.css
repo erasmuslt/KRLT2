@@ -167,6 +167,14 @@ hr.small {
     -o-background-size: cover;
 }
 
+
+.header__name{
+    font-family: "Source Sans Pro";
+    font-size: 4em;
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+}
+
 .header__words{
     font-family: "QaskinBlack",  garamond;
     font-size: 4em;
@@ -333,7 +341,24 @@ footer {
 }
   
 
-.neon {
+.neon2 {
+    color: #fff;
+    font-size:4em;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #478ac9, 0 0 70px #478ac9, 0 0 80px #478ac9, 0 0 100px #478ac9;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #478ac9,  0 0 20px #478ac9;
+    }
+}
+
+.neon1 {
     color: #fff;
     -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
     -moz-animation: neon1 1.5s ease-in-out infinite alternate;

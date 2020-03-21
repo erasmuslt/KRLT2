@@ -11,6 +11,44 @@
     src: url("../fonts/mans-greback/QaskinBlack.ttf");
 }
 
+@font-face { /* Cursive */
+    font-family: "MarradaRegular";
+    src: url("../fonts/MarradaRegular.ttf");
+}
+
+@font-face { /* Cursive */
+    font-family: "Hotham";
+    src: url("../fonts/Hotham.ttf");
+}
+
+@font-face { /* Cursive */
+    font-family: "Kandira";
+    src: url("../fonts/Kandira.ttf");
+}
+
+
+@font-face { /* Cursive */
+    font-family: "paperdaisy-demo";
+    src: url("../fonts/paperdaisy-demo.ttf");
+}
+
+@font-face { /* Cursive */
+    font-family: "Scotties";
+    src: url("../fonts/Scotties.ttf");
+}
+
+@font-face { /* Cursive */
+    font-family: "Sandblack";
+    src: url("../fonts/Sandblack.ttf");
+}
+
+@font-face { /* Cursive */
+    font-family: "Skyfont";
+    src: url("../fonts/Skyfont.otf");
+}
+
+
+
 html,
 body {
     width: 100%;
@@ -30,7 +68,7 @@ body {
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 4.5em;
+    font-size: 6em;
     font-weight: 700;
 }
 
@@ -169,17 +207,25 @@ hr.small {
 
 
 .header__name{
-    font-family: "Source Sans Pro";
+    font-family: "MarradaRegular";
+    font-size: 6em;
+    font-size: 7vw;
+    color: rgb(255, 255, 255);
+}
+
+.header__date{
+    font-family: "Hotham";
     font-size: 4em;
     font-size: 5vw;
     color: rgb(255, 255, 255);
 }
 
+
 .header__words{
     font-family: "QaskinBlack",  garamond;
     font-size: 4em;
     font-size: 5vw;
-    color: rgb(255, 255, 255);
+    color: rgb(243, 0, 0);
 }
 
 
@@ -342,14 +388,23 @@ footer {
   
 
 .neon2 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size:4em;
-    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-    animation: neon1 1.5s ease-in-out infinite alternate;
+    -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+    animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes neon2 {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ca0000, 0 0 70px #ca0000, 0 0 80px #ca0000, 0 0 100px #ca0000;
+    }
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ca0000,  0 0 20px #ca0000;
+    }
+}
+
+@keyframes neon3 {
     from {
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #478ac9, 0 0 70px #478ac9, 0 0 80px #478ac9, 0 0 100px #478ac9;
     }
@@ -371,5 +426,82 @@ footer {
     }
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #478ac9,  0 0 20px #478ac9;
+    }
+}
+
+.greeting {
+    position: relative;
+    display: table;
+    flex-direction: column;
+    padding: 80px 0;
+    width: 100%;
+    height: 100%;
+    min-height: 750px;
+    font-family: "HamchorongbatangR", "바탕";
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+}
+
+.greeting__bg_img{
+    bottom: 0%;
+    right: 0%;
+    height: 100%;
+    width: 100%;
+    opacity:1;
+}
+
+
+.greeting__words {
+    display: block;
+    margin: auto;
+    padding: auto;
+    line-height: 1.7;
+    font-size: 15px;
+    font-size: 1.1em;
+}
+
+
+.greeting__img { /* added */
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    height: auto;
+}
+
+@media(max-width:1000px) {
+    .greeting{
+        min-height: 600px;
+    }
+    .greeting__img { /* added */
+        width: 120px;
+    }
+    .greeting__words {
+        line-height: 1.7;
+        font-size: 13px;
+        font-size: 0.9em;
+    }
+}
+
+@media(max-width:500px) {
+    .greeting__bg_img{
+        bottom: 0%;
+        right: 0%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media(max-width:350px) {
+    .greeting{
+        min-height: 500px;
+    }
+    .greeting__img { /* added */
+        width: 100px;
+    }
+    .greeting__words {
+        line-height: 1.7;
+        font-size: 11px;
+        font-size: 0.75em;
+        font-size: 3.5vw;
     }
 }
